@@ -2,7 +2,7 @@
 
 # Remove Adblock Notifications for YouTube
 
-This Tampermonkey script enhances the user experience on YouTube by automatically detecting and removing pop-ups related to ad-blockers. By suppressing Adblock-related interruptions and prompts, it ensures that videos continue to play seamlessly. Moreover, it effectively manages dynamically loaded content, maintaining an uninterrupted, ad-free viewing experience.
+This script enhances the user experience on YouTube by automatically detecting and removing pop-ups related to ad-blockers. By suppressing Adblock-related interruptions and prompts, it ensures that videos continue to play seamlessly. Moreover, it effectively manages dynamically loaded content, maintaining an uninterrupted, ad-free viewing experience.
 
 ## Installation
 
