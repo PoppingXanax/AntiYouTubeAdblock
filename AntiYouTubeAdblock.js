@@ -47,18 +47,21 @@
         unpauseCounter = 0;
         debugLog("Unpaused video using 'k' key");
     }
-
+    
     function processAdblockPopup() {
         const adblockPopup = document.querySelector("body > ytd-app > ytd-popup-container > tp-yt-paper-dialog");
         const videoMain = document.querySelector("#movie_player > video.html5-main-video");
         const videoAlt = document.querySelector("#movie_player > .html5-video-container > video");
-
+    
         if (adblockPopup) {
             debugLog("Adblock popup detected, removing...");
             adblockPopup.remove();
             unpauseCounter = 2;
+            console.log("Removed Adblock popup.");
+        } else {
+            console.log("No Adblock popup detected.");
         }
-
+    
         if (unpauseCounter > 0) {
             if (videoMain && videoMain.paused) triggerUnpause();
             else if (videoAlt && videoAlt.paused) triggerUnpause();
